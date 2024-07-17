@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         backgroundColor: "#DAE1E7",
     },
     back: {
-        backgroundColor: "BAC1C7"
+        backgroundColor: "#BAC1C7"
     },
     circle: {
         width: 24,
@@ -46,5 +46,14 @@ export const styles = StyleSheet.create({
     },
     orange:{
         backgroundColor: "orange",
-    }
+    },
+    label: {
+        fontSize: 14,
+        color: "#4F5F64",
+    },
+    value: {
+        fontSize: 16,
+        fontWeight: "bold",
+    },
+
 })
