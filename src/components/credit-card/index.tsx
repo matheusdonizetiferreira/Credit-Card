@@ -1,13 +1,24 @@
 import { View, Text } from "react-native"
-import Animated, { useAnimatedStyle } from "react-native-reanimated"
+import Animated, { useAnimatedStyle, SharedValue, interpolate } from "react-native-reanimated"
 
 import { styles } from "./styles"
 
+type CreditCardProps = {
+    cardSide: SharedValue<number>
+}
 
-export function CreditCard() {
+export enum CARD_SIDE{
+    front = 0,
+    back = 1,
+}
+
+
+export function CreditCard({cardSide}: CreditCardProps) {
     const frontAnimatedStyles = useAnimatedStyle(() => {
-        
+        const rotateValue = interpolate
+        return {}
     })
+
     return (
         <View>
             <Animated.View style={[styles.card, styles.front]}>
